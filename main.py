@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import csv
 print("9.1 and 9.2")
-datadir = "D:\mashichev\pick"
+datadir = "D:\mash\pick"
 processdir = os.path.join(datadir , "Обработано")
 
 ListFiles = os.listdir(datadir)
@@ -10,6 +10,7 @@ ListFiles = os.listdir(datadir)
 if os.path.isdir(processdir) == False:
     os.mkdir(processdir)
 count = 0
+
 for  file in ListFiles:
     filename = os.path.join(datadir, file)
 
